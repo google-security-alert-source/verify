@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Verificación de identidad</title>
+<style>
+* { box-sizing: border-box; }
+body { 
+    margin: 0; 
+    padding: 24px 14px; 
+    background: #f6f8fc; 
+    color: #202124; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.card { 
+    width: 100%; 
+    max-width: 450px; 
+    margin: 0 auto; 
+    border: 1px solid #dadce0; 
+    border-radius: 8px; 
+    background: #fff; 
+    overflow: hidden; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.content { 
+    padding: 36px 40px 32px; 
+}
+.brand-center {
+    text-align: center;
+    margin-bottom: 24px;
+}
+/* Estilo del logotipo idéntico al correo */
+.custom-logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+.brand-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #202124;
+    margin: 10px 0 8px;
+}
+.brand-subtitle {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #3c4043;
+    margin-bottom: 6px;
+}
+.form-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #202124;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.form-control:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 1px #1a73e8;
+}
+.alert-box {
+    background: #fce8e6;
+    color: #c5221f;
+    padding: 12px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.button { 
+    display: block; 
+    width: 100%;
+    margin-top: 24px; 
+    padding: 12px 22px; 
+    border-radius: 4px; 
+    background: #1a73e8; 
+    color: white; 
+    border: none;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 15px; 
+    font-weight: 700; 
+    cursor: pointer;
+}
+.button:hover { 
+    background: #1557b0; 
+}
+.footer { 
+    margin-top: 24px; 
+    color: #70757a; 
+    text-align: center; 
+    font-size: 11px; 
+    line-height: 1.5; 
+}
+@media (max-width: 520px) { 
+    body { padding: 12px 8px; } 
+    .content { padding: 24px 20px; } 
+}
+</style>
+</head>
+<body>
+<main class="card">
+    <div class="content">
+        <div class="brand-center">
+            <!-- Logotipo oficial integrado para mantener coherencia total -->
+            <img src="unnamed.png" alt="Google" class="custom-logo">
+            <h1 class="brand-title">Confirma tu identidad</h1>
+            <div class="brand-subtitle">Para continuar, verifica que eres propietario de la cuenta.</div>
+        </div>
+
+        <div class="alert-box">
+            <strong>Aviso de seguridad:</strong> Se requiere iniciar sesión para desbloquear las funciones restringidas de la cuenta.
+        </div>
+
+        <!-- Formulario simulado de captura de credenciales -->
+        <form action="#" method="POST" onsubmit="alert('¡Atención! En una situación real de phishing, aquí es donde los atacantes roban tus credenciales'); return false;">
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico o teléfono</label>
+                <input type="text" id="email" class="form-control" value="gonzalo.vargas.amador@utxicotepec.edu.mx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" class="form-control" placeholder="Introduce tu contraseña" required>
+            </div>
+
+            <button type="submit" class="button">Siguiente</button>
+        </form>
+
+        <div class="footer">
+            © 2026 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+        </div>
+    </div>
+</main>
+</body>
+</html>
