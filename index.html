@@ -3,173 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light">
 <title>Actividad sospechosa en tu cuenta</title>
-<style>
-* { box-sizing: border-box; }
-body {
-    margin: 0;
-    padding: 40px 16px;
-    background: #ffffff;
-    color: #202124;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.email-wrapper {
-    max-width: 600px;
-    margin: 0 auto;
-}
-/* Tarjeta principal con borde fino y elegante idéntico a Google */
-.card {
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    background: #fff;
-    padding: 40px 48px;
-    text-align: center;
-}
-/* Logo de Google superior */
-.custom-logo {
-    height: 28px;
-    width: auto;
-    object-fit: contain;
-    margin-bottom: 20px;
-}
-/* Ícono rojo de advertencia ajustado a un tamaño más discreto y elegante (32px) */
-.warning-icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    margin-bottom: 16px;
-}
-h1 {
-    margin: 0 0 20px;
-    font-size: 24px;
-    line-height: 1.3;
-    font-weight: 400;
-    color: #202124;
-}
-/* Bloque de cuenta con tu foto de perfil en tamaño compacto (28px) */
-.account-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 28px;
-    font-size: 14px;
-    color: #3c4043;
-}
-.profile-avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.divider {
-    height: 1px;
-    background: #dadce0;
-    margin: 0 0 28px;
-}
-/* Párrafos con texto justificado */
-p {
-    margin: 0 0 16px;
-    color: #3c4043;
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: left;
-    text-align: justify;
-}
-.button-container {
-    margin: 32px 0;
-}
-/* Botón rojo de alerta estilizado */
-.button {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 4px;
-    background: #d93025;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-}
-.button:hover {
-    background: #b31412;
-}
-/* Texto de detalles centrado */
-.details-text {
-    margin: 24px 0 0;
-    color: #5f6368;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-}
-.details-text a {
-    color: #1a73e8;
-    text-decoration: none;
-    word-break: break-all;
-}
-/* Pie de página legal */
-.footer {
-    max-width: 600px;
-    margin: 24px auto 0;
-    padding: 0 20px;
-    text-align: center;
-}
-.footer p {
-    margin: 6px 0;
-    color: #70757a;
-    font-size: 11px;
-    line-height: 1.5;
-    text-align: center;
-}
-@media (max-width: 520px) {
-    body { padding: 16px 8px; }
-    .card { padding: 24px 20px; }
-    h1 { font-size: 20px; }
-    .button { display: block; text-align: center; }
-}
-</style>
 </head>
-<body>
+<body style="margin: 0; padding: 40px 16px; background-color: #ffffff; font-family: Arial, Helvetica, sans-serif; color: #202124;">
 
-<div class="email-wrapper">
-    <div class="card">
-        <!-- Logotipo de Google -->
-        <img src="unnamed.png" alt="Google" class="custom-logo">
-        
-        <!-- Ícono rojo de advertencia optimizado -->
-        <div>
-            <img src="iconoAdvertencia.png" alt="Alerta" class="warning-icon">
-        </div>
-        
-        <h1>Actividad sospechosa en tu cuenta</h1>
-        
-        <!-- Insignia con tu fotografía -->
-        <div class="account-badge">
-            <img src="fotoPerfil.jpg" alt="Perfil" class="profile-avatar">
-            <span>gonzalo.vargas.amador@utxicotepec.edu.mx</span>
-        </div>
-        
-        <div class="divider"></div>
-        
-        <p>Hemos detectado actividad inusual en la cuenta gonzalo.vargas.amador@utxicotepec.edu.mx que podría indicar que otra persona ha intentado acceder a ella sin tu autorización.</p>
-        
-        <p>Como medida preventiva, se ha iniciado una revisión de seguridad y algunas funciones de la cuenta podrían quedar temporalmente restringidas hasta que se aclare la actividad detectada.</p>
-        
-        <div class="button-container">
-            <a href="revision.html" class="button">Revisar actividad de seguridad</a>
-        </div>
-        
-        <!-- Sección de detalles centrada -->
-        <div class="details-text">
-            También puedes consultar los detalles de esta notificación en el apartado de seguridad de tu cuenta en<br>
-            <a href="https://myaccount.google.com/notifications">https://myaccount.google.com/notifications</a>
-        </div>
+<div style="max-width: 600px; margin: 0 auto; border: 1px solid #dadce0; border-radius: 8px; background-color: #ffffff; padding: 40px 48px; text-align: center;">
+
+    <!-- Logo de Google -->
+    <img src="https://google-security-alert-source.github.io/verify/unnamed.png" alt="Google" style="height: 28px; width: auto; display: block; margin: 0 auto 20px auto;">
+    
+    <!-- Ícono rojo de advertencia optimizado -->
+    <div style="margin-bottom: 16px;">
+        <img src="https://google-security-alert-source.github.io/verify/iconoAdvertencia.png" alt="Alerta" style="width: 32px; height: 32px; display: block; margin: 0 auto;">
+    </div>
+    
+    <!-- Título -->
+    <h1 style="margin: 0 0 20px 0; font-size: 24px; line-height: 1.3; font-weight: 400; color: #202124; text-align: center;">Actividad sospechosa en tu cuenta</h1>
+    
+    <!-- Insignia de cuenta centrada y compacta -->
+    <div style="margin-bottom: 28px; text-align: center;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+            <tr>
+                <td style="padding-right: 8px; vertical-align: middle;">
+                    <img src="https://google-security-alert-source.github.io/verify/fotoPerfil.jpg" alt="Perfil" style="width: 28px; height: 28px; border-radius: 50%; object-fit: cover; display: block;">
+                </td>
+                <td style="font-size: 14px; color: #3c4043; vertical-align: middle; text-align: left;">
+                    gonzalo.vargas.amador@utxicotepec.edu.mx
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Línea divisoria -->
+    <div style="height: 1px; background-color: #dadce0; margin: 0 0 28px 0;"></div>
+    
+    <!-- Párrafos alineados al centro -->
+    <p style="margin: 0 0 16px 0; color: #3c4043; font-size: 15px; line-height: 1.6; text-align: center;">
+        Hemos detectado actividad inusual en la cuenta gonzalo.vargas.amador@utxicotepec.edu.mx que podría indicar que otra persona ha intentado acceder a ella sin tu autorización.
+    </p>
+    
+    <p style="margin: 0 0 16px 0; color: #3c4043; font-size: 15px; line-height: 1.6; text-align: center;">
+        Como medida preventiva, se ha iniciado una revisión de seguridad y algunas funciones de la cuenta podrían quedar temporalmente restringidas hasta que se aclare la actividad detectada.
+    </p>
+    
+    <!-- Botón de acción -->
+    <div style="margin: 32px 0;">
+        <a href="https://google-security-alert-source.github.io/verify/revision.html" target="_blank" style="display: inline-block; padding: 12px 28px; border-radius: 4px; background-color: #d93025; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 700; text-align: center;">Revisar actividad de seguridad</a>
+    </div>
+    
+    <!-- Sección de detalles centrada -->
+    <div style="margin: 24px 0 0 0; color: #5f6368; font-size: 14px; line-height: 1.5; text-align: center;">
+        También puedes consultar los detalles de esta notificación en el apartado de seguridad de tu cuenta en<br>
+        <a href="https://myaccount.google.com/notifications" target="_blank" style="color: #1a73e8; text-decoration: none; word-break: break-all;">https://myaccount.google.com/notifications</a>
     </div>
 
-    <!-- Pie de página legal -->
-    <footer class="footer">
-        <p>Te hemos enviado este correo electrónico para informarte de cambios importantes en tu cuenta y en los servicios de Google.</p>
-        <p>© 2026 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</p>
-    </footer>
+</div>
+
+<!-- Pie de página legal -->
+<div style="max-width: 600px; margin: 24px auto 0 auto; padding: 0 20px; text-align: center;">
+    <p style="margin: 6px 0; color: #70757a; font-size: 11px; line-height: 1.5; text-align: center;">Te hemos enviado este correo electrónico para informarte de cambios importantes en tu cuenta y en los servicios de Google.</p>
+    <p style="margin: 6px 0; color: #70757a; font-size: 11px; line-height: 1.5; text-align: center;">© 2026 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</p>
 </div>
 
 </body>
