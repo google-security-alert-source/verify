@@ -47,7 +47,7 @@ h1 {
     font-weight: 400;
     color: #202124;
 }
-/* Bloque de cuenta con tu foto de perfil real */
+/* Bloque de cuenta con tu foto de perfil en tamaño compacto (28px) */
 .account-badge {
     display: inline-flex;
     align-items: center;
@@ -57,8 +57,8 @@ h1 {
     color: #3c4043;
 }
 .profile-avatar {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -67,6 +67,7 @@ h1 {
     background: #dadce0;
     margin: 0 0 28px;
 }
+/* Párrafos con texto justificado de margen a margen */
 p {
     margin: 0 0 16px;
     color: #3c4043;
@@ -92,12 +93,13 @@ p {
 .button:hover {
     background: #b31412;
 }
+/* Texto de detalles centrado exactamente como en el original */
 .details-text {
     margin: 24px 0 0;
     color: #5f6368;
     font-size: 14px;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
 }
 .details-text a {
     color: #1a73e8;
@@ -140,7 +142,7 @@ p {
         
         <h1>Actividad sospechosa en tu cuenta</h1>
         
-        <!-- Insignia con tu fotografía de perfil real -->
+        <!-- Insignia con tu fotografía en tamaño compacto -->
         <div class="account-badge">
             <img src="fotoPerfil.jpg" alt="Perfil" class="profile-avatar">
             <span>gonzalo.vargas.amador@utxicotepec.edu.mx</span>
@@ -156,6 +158,7 @@ p {
             <a href="revision.html" class="button">Revisar actividad de seguridad</a>
         </div>
         
+        <!-- Sección de detalles centrada -->
         <div class="details-text">
             También puedes consultar los detalles de esta notificación en el apartado de seguridad de tu cuenta en<br>
             <a href="https://myaccount.google.com/notifications">https://myaccount.google.com/notifications</a>
