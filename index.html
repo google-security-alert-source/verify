@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
-<title>Actividad sospechosa en tu cuenta </title>
+<title>Actividad sospechosa en tu cuenta</title>
 <style>
 * { box-sizing: border-box; }
 body {
@@ -26,12 +26,19 @@ body {
     padding: 40px 48px;
     text-align: center;
 }
-/* Logo */
+/* Logo de Google superior */
 .custom-logo {
     height: 28px;
     width: auto;
     object-fit: contain;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+}
+/* Estilo y control de tamaño para tu ícono rojo de advertencia */
+.warning-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 16px;
 }
 h1 {
     margin: 0 0 20px;
@@ -40,7 +47,7 @@ h1 {
     font-weight: 400;
     color: #202124;
 }
-/* Bloque de cuenta con avatar circular e inicial (estilo G-Suite/Institucional) */
+/* Bloque de cuenta con tu foto de perfil real */
 .account-badge {
     display: inline-flex;
     align-items: center;
@@ -49,32 +56,16 @@ h1 {
     font-size: 14px;
     color: #3c4043;
 }
-.avatar {
+.profile-avatar {
     width: 24px;
     height: 24px;
-    background: #5f6368;
-    color: #fff;
     border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 12px;
-    font-weight: 700;
+    object-fit: cover;
 }
 .divider {
     height: 1px;
     background: #dadce0;
     margin: 0 0 28px;
-}
-/* Avisos y textos alineados a la izquierda para mayor realismo */
-.notice-box {
-    background: #fef7e0;
-    color: #5f4b00;
-    padding: 12px 16px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 20px;
 }
 p {
     margin: 0 0 16px;
@@ -82,22 +73,24 @@ p {
     font-size: 15px;
     line-height: 1.6;
     text-align: left;
+    text-align: justify;
 }
 .button-container {
     margin: 32px 0;
 }
+/* Botón rojo de alerta estilizado */
 .button {
     display: inline-block;
     padding: 12px 28px;
-    border-radius: 20px;
-    background: #1a73e8;
+    border-radius: 4px;
+    background: #d93025;
     color: #fff;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
 }
 .button:hover {
-    background: #1557b0;
+    background: #b31412;
 }
 .details-text {
     margin: 24px 0 0;
@@ -111,7 +104,7 @@ p {
     text-decoration: none;
     word-break: break-all;
 }
-/* Pie de página legal idéntico al de los correos corporativos/educativos */
+/* Pie de página legal */
 .footer {
     max-width: 600px;
     margin: 24px auto 0;
@@ -137,26 +130,27 @@ p {
 
 <div class="email-wrapper">
     <div class="card">
-        <!-- Logotipo usando tu archivo unnamed.png -->
+        <!-- Logotipo de Google -->
         <img src="unnamed.png" alt="Google" class="custom-logo">
+        
+        <!-- Ícono rojo de advertencia -->
+        <div>
+            <img src="iconoAdvertencia.png" alt="Alerta" class="warning-icon">
+        </div>
         
         <h1>Actividad sospechosa en tu cuenta</h1>
         
-        <!-- Insignia de cuenta de demostración con avatar -->
+        <!-- Insignia con tu fotografía de perfil real -->
         <div class="account-badge">
-            <div class="avatar">G</div>
+            <img src="fotoPerfil.jpg" alt="Perfil" class="profile-avatar">
             <span>gonzalo.vargas.amador@utxicotepec.edu.mx</span>
         </div>
         
         <div class="divider"></div>
         
-        <div class="notice-box">Aviso de seguridad</div>
+        <p>Hemos detectado actividad inusual en la cuenta gonzalo.vargas.amador@utxicotepec.edu.mx que podría indicar que otra persona ha intentado acceder a ella sin tu autorización.</p>
         
-        <!-- Párrafo 1 justificado -->
-        <p style="text-align: justify;">Hemos detectado actividad inusual en la cuenta gonzalo.vargas.amador@utxicotepec.edu.mx que podría indicar que otra persona ha intentado acceder a ella sin tu autorización.</p>
-        
-        <!-- Párrafo 2 justificado -->
-        <p style="text-align: justify;">Como medida preventiva, se ha iniciado una revisión de seguridad y algunas funciones de la cuenta podrían quedar temporalmente restringidas hasta que se aclare la actividad detectada.</p>
+        <p>Como medida preventiva, se ha iniciado una revisión de seguridad y algunas funciones de la cuenta podrían quedar temporalmente restringidas hasta que se aclare la actividad detectada.</p>
         
         <div class="button-container">
             <a href="revision.html" class="button">Revisar actividad de seguridad</a>
@@ -166,10 +160,9 @@ p {
             También puedes consultar los detalles de esta notificación en el apartado de seguridad de tu cuenta en<br>
             <a href="https://myaccount.google.com/notifications">https://myaccount.google.com/notifications</a>
         </div>
-        
     </div>
 
-    <!-- Pie de página legal exacto -->
+    <!-- Pie de página legal -->
     <footer class="footer">
         <p>Te hemos enviado este correo electrónico para informarte de cambios importantes en tu cuenta y en los servicios de Google.</p>
         <p>© 2026 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</p>
